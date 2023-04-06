@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1EACCFF5-38CB-4FEF-A837-11E12C7CC4A3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fofx.Quintessence.RelationshipSeries</RootNamespace>
+    <AssemblyName>Fofx.Quintessence.RelationshipSeries</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="%28Stubs%29\CharacteristicRevisable\CharacteristicRevisableGeneric.cs" />
+    <Compile Include="%28Stubs%29\CharacteristicRevisable\DataTypeCharacteristicRevisableTimeSeries.cs" />
+    <Compile Include="%28Stubs%29\CharacteristicRevisable\DateCharacteristicRevisableTimeSeries.cs" />
+    <Compile Include="%28Stubs%29\CharacteristicRevisable\NumericCharacteristicRevisableTimeSeries.cs" />
+    <Compile Include="%28Stubs%29\CharacteristicRevisable\StringCharacteristicRevisableTimeSeries.cs" />
+    <Compile Include="%28Stubs%29\ConstituentRevisable\ArrayTypeConstituentRevisableTimeSeries.cs" />
+    <Compile Include="%28Stubs%29\ConstituentRevisable\ConstituentRevisableDataPointEnumerator.cs" />
+    <Compile Include="%28Stubs%29\ConstituentRevisable\ConstituentRevisableTimeSeriesGeneric.cs" />
+    <Compile Include="%28Stubs%29\ConstituentRevisable\ConstituentRevisableTimeSeriesGenericBuilder.cs" />
+    <Compile Include="%28Stubs%29\ConstituentRevisable\DataTypeConstituentRevisableTimeSeries.cs" />
+    <Compile Include="%28Stubs%29\ConstituentRevisable\DateConstituentArrayTimeSeries.cs" />
+    <Compile Include="%28Stubs%29\ConstituentRevisable\DateConstituentRevisableTimeSeries.cs" />
+    <Compile Include="%28Stubs%29\ConstituentRevisable\NumericConstituentArrayTimeSeries.cs" />
+    <Compile Include="%28Stubs%29\ConstituentRevisable\NumericConstituentRevisableTimeSeries.cs" />
+    <Compile Include="%28Stubs%29\ConstituentRevisable\StringConstituentArrayTimeSeries.cs" />
+    <Compile Include="%28Stubs%29\ConstituentRevisable\StringConstituentRevisableTimeSeries.cs" />
+    <Compile Include="%28Stubs%29\IDataType.cs" />
+    <Compile Include="%28Stubs%29\IDataTypeField.cs" />
+    <Compile Include="%28Stubs%29\DataAccess.cs" />
+    <Compile Include="%28Stubs%29\DataManipulation.cs" />
+    <Compile Include="%28Stubs%29\DataPoint.cs" />
+    <Compile Include="%28Stubs%29\EntityDescriptor.cs" />
+    <Compile Include="%28Stubs%29\FofxConstants.cs" />
+    <Compile Include="%28Stubs%29\IConstituentTimeSeries.cs" />
+    <Compile Include="%28Stubs%29\IEntityDescriptor.cs" />
+    <Compile Include="%28Stubs%29\INullableReader.cs" />
+    <Compile Include="%28Stubs%29\IPoint.cs" />
+    <Compile Include="%28Stubs%29\ITimeSeries.cs" />
+    <Compile Include="%28Stubs%29\ITimeSeriesIterator.cs" />
+    <Compile Include="%28Stubs%29\ITimeSeriesKey.cs" />
+    <Compile Include="%28Stubs%29\ITranslator.cs" />
+    <Compile Include="%28Stubs%29\Preference.cs" />
+    <Compile Include="%28Stubs%29\RelationshipDescriptor.cs" />
+    <Compile Include="%28Stubs%29\RelationshipTimeSeriesKey.cs" />
+    <Compile Include="%28Stubs%29\RelationshipTimeSeriesRequest.cs" />
+    <Compile Include="%28Stubs%29\Revision.cs" />
+    <Compile Include="%28Stubs%29\NonKeyedAttributeSet.cs" />
+    <Compile Include="%28Stubs%29\SourceDescriptor.cs" />
+    <Compile Include="%28Stubs%29\TimeSeriesDescriptor.cs" />
+    <Compile Include="%28Stubs%29\TimeSeriesKey.cs" />
+    <Compile Include="%28Stubs%29\TimeSeriesRequest.cs" />
+    <Compile Include="DatabaseRequestArgs.cs" />
+    <Compile Include="DateRelationshipSeries\RelationshipDateArrayRequestHelper.cs" />
+    <Compile Include="DateRelationshipSeries\RelationshipDateCharacteristicRequestHelper.cs" />
+    <Compile Include="DateRelationshipSeries\RelationshipDateRevisableRequestHelper.cs" />
+    <Compile Include="EnumRelationshipSeries\RelationshipEnumArrayRequestHelper.cs" />
+    <Compile Include="EnumRelationshipSeries\RelationshipEnumCharacteristicRequestHelper.cs" />
+    <Compile Include="EnumRelationshipSeries\RelationshipEnumRevisableRequestHelper.cs" />
+    <Compile Include="Helpers\BaseRequestHelper.cs" />
+    <Compile Include="Helpers\ITimeSeriesRequestHelper.cs" />
+    <Compile Include="NumericRelationshipSeries\RelationshipNumericArrayRequestHelper.cs" />
+    <Compile Include="NumericRelationshipSeries\RelationshipNumericCharacteristicRequestHelper.cs" />
+    <Compile Include="NumericRelationshipSeries\RelationshipNumericRevisableRequestHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringRelationshipSeries\RelationshipStringArrayRequestHelper.cs" />
+    <Compile Include="StringRelationshipSeries\RelationshipStringCharacteristicRequestHelper.cs" />
+    <Compile Include="StringRelationshipSeries\RelationshipStringRevisableRequestHelper.cs" />
+    <Compile Include="TimeSeriesLoadRequest.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
